@@ -1,7 +1,8 @@
-const mongoose = require('mongoose');
+
+const mongoose = require("mongoose");
 
 
-exports.getData = async (req, res) => {
+exports.getData =  async (req, res) => {
 
     const todoModel = mongoose.model("Todos");
   
@@ -96,8 +97,6 @@ exports.getData = async (req, res) => {
         
       };
   
-  
-  
       exports.deleteTodo = async (req, res) =>{
     
       const todoModel = mongoose.model("Todos");
@@ -137,5 +136,6 @@ exports.getData = async (req, res) => {
           message:e
         });
       }
+     
+     
     };
-  
